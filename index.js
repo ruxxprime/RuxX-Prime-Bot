@@ -1,3 +1,5 @@
+console.log("TOKEN existe?", !!process.env.TOKEN);
+
 require('dotenv').config(); // carrega variáveis do .env
 
 const { Client, GatewayIntentBits, EmbedBuilder } = require('discord.js');
@@ -47,3 +49,5 @@ client.on('messageCreate', async (message) => {
   });
 });
 
+// login seguro
+client.login(TOKEN);
