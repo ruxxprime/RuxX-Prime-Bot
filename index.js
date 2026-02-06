@@ -38,7 +38,7 @@ client.on('messageCreate', async (message) => {
 
   const embed = new EmbedBuilder()
     .setTitle("PAGAMENTO VIA PIX")
-    .setDescription("Envie o comprovante neste ticket. (Entrega após confirmação.)")
+    .setDescription("Envie o comprovante neste ticket. (Entrega Depois de Confirmar.)")
     .addFields(
       { name: "Chave PIX", value: PIX_CHAVE, inline: true },
       { name: "Valor", value: valorTexto, inline: true }
