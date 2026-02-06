@@ -1,4 +1,8 @@
-console.log("TOKEN existe?", !!process.env.TOKEN);
+require('dotenv').config();
+
+console.log("TOKEN:", process.env.TOKEN);
+console.log("PIX:", process.env.PIX_CHAVE);
+console.log("Iniciando bot...");
 
 require('dotenv').config(); // carrega variáveis do .env
 
